@@ -53,12 +53,12 @@
         let pionSession = new PionSession(SIGNALER_URI, '', {
           iceServers: [
             {
-              url: 'turn:relay.backups.cz',
+              urls: 'turn:relay.backups.cz',
               credential: 'webrtc',
               username: 'webrtc',
             },
             {
-              url: "stun:relay.backups.cz"
+              urls: "stun:relay.backups.cz"
             }            
           ],
           mandatory: {OfferToReceiveVideo: true, OfferToReceiveAudio: true}
